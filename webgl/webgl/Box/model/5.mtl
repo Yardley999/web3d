@@ -1,0 +1,77 @@
+#  ==========================================================================
+#  Wavefront Material file
+#  Exported by Red-i Productions' "Riptide Pro"
+#  (a commercial plugin for Cinema 4D PC & Mac, R9.6 or later)
+#  
+#  Red-i Productions
+#  http://skinprops.com
+#  
+#  ==========================================================================
+
+newmtl Folder0001
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+illum 2
+Ns 50.781250
+
+newmtl BWom0006
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+illum 2
+Ns 50.781250
+
+newmtl CWom0020
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+illum 2
+Ns 50.781250
+
+newmtl BMan0004
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+illum 2
+Ns 50.781250
+
+newmtl wire_108008136
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+illum 2
+Ns 50.781250
+
+newmtl wire_225143087
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+illum 2
+Ns 50.781250
+
+newmtl Mat
+Kd 0.803922 0.745098 0.678431
+Ks 1.000000 1.000000 1.000000
+illum 2
+Ns 50.781250
+
+newmtl chair
+Kd 0.864078 0.714544 0.223220
+illum 1
+
+newmtl ground
+Kd 0.951456 0.883797 0.748479
+illum 1
+
+newmtl small_screen.1
+Kd 0.690265 0.690265 0.690265
+Ks 1.000000 1.000000 1.000000
+illum 2
+Ns 50.781250
+map_Kd smallscreen.jpg
+
+newmtl main_screen.2
+Kd 0.800000 0.800000 0.800000
+illum 1
+map_Kd bigscreen.jpg
+
+newmtl out
+Kd 0.300971 0.137255 0.050162
+Ks 1.000000 1.000000 1.000000
+illum 2
+Ns 50.781250

@@ -57,13 +57,17 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Box\index.html" />
+    <Content Include="Box\Json.html" />
+    <Content Include="Box\model\5.js" />
+    <Content Include="Box\Objmtl.html" />
     <Content Include="Box\js\DDSLoader.js" />
     <Content Include="Box\js\Detector.js" />
     <Content Include="Box\js\MTLLoader.js" />
     <Content Include="Box\js\OBJMTLLoader.js" />
+    <Content Include="Box\js\OrbitControls.js" />
     <Content Include="Box\js\stats.min.js" />
     <Content Include="Box\js\three.min.js" />
+    <Content Include="Box\js\THREEx.WindowResize.js" />
     <Content Include="Box\js\TrackballControls.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -74,6 +78,8 @@
     <Content Include="Box\web.config" />
     <Content Include="Box\model\a.mtl" />
     <Content Include="Box\model\a.obj" />
+    <Content Include="Box\model\5.mtl" />
+    <Content Include="Box\model\5.obj" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

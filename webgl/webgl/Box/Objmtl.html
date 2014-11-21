@@ -1,0 +1,171 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>OBJ MTL loader</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+        body {
+            font-family: Monospace;
+            background-color: #000;
+            color: #fff;
+            margin: 0px;
+            overflow: hidden;
+        }
+
+        #info {
+            color: #fff;
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            text-align: center;
+            z-index: 100;
+            display: block;
+        }
+
+            #info a, .button {
+                color: #f00;
+                font-weight: bold;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+    </style>
+</head>
+
+<body>
+
+    <script src="js/three.min.js"></script>
+
+    <script src="js/DDSLoader.js"></script>
+    <script src="js/MTLLoader.js"></script>
+    <script src="js/OBJMTLLoader.js"></script>
+
+    <script src="js/Detector.js"></script>
+    <script src="js/stats.min.js"></script>
+
+    <script src="js/OrbitControls.js"></script>
+    <script src="js/THREEx.WindowResize.js"></script>
+
+    <script>
+
+			var container, stats;
+
+			var camera, scene, renderer, controls;
+
+			var mouseX = 0, mouseY = 0;
+
+			var windowHalfX = window.innerWidth / 2;
+			var windowHalfY = window.innerHeight / 2;
+
+
+			init();
+			animate();
+
+			function init() {
+
+				container = document.createElement( 'div' );
+				document.body.appendChild( container );
+
+				camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 2000 );
+				camera.position.z = 100;
+
+				// scene
+				scene = new THREE.Scene();
+
+				camera = new THREE.PerspectiveCamera(45, this.innerWidth / this.innerHeight, 0.1, 20000);
+				camera.lookAt(new THREE.Vector3(100, 100, 100));
+				camera.position.set(600, 600, -800);
+
+				light1 = new THREE.AmbientLight(0x888888);
+				light2 = new THREE.PointLight(0xaaaaaa)
+				light2.position.set(500, 250, 1200);
+
+				skyBox = new THREE.Mesh(
+                        new THREE.CubeGeometry(10000, 10000, 10000),
+                        new THREE.MeshBasicMaterial({ color: 0x9999ff, side: THREE.BackSide })
+                    );
+
+				scene.add(camera);
+				scene.add(light1);
+				scene.add(light2);
+				scene.add(skyBox);
+
+				// model
+
+				var onProgress = function ( xhr ) {
+					if ( xhr.lengthComputable ) {
+						var percentComplete = xhr.loaded / xhr.total * 100;
+						console.log( Math.round(percentComplete, 2) + '% downloaded' );
+					}
+				};
+
+				var onError = function ( xhr ) {
+				};
+
+
+				THREE.Loader.Handlers.add( /\.dds$/i, new THREE.DDSLoader() );
+
+				var loader = new THREE.OBJMTLLoader();
+				loader.load('model/5.obj', 'model/5.mtl', function (object) {
+
+					object.position.y = - 80;
+					scene.add( object );
+
+				}, onProgress, onError );
+
+				//
+
+				renderer = new THREE.WebGLRenderer({ antialias: false });
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				container.appendChild( renderer.domElement );
+
+				//document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+
+			    //
+				controls = new THREE.OrbitControls(camera, renderer.domElement);
+				THREEx.WindowResize(renderer, camera);
+				//window.addEventListener( 'resize', onWindowResize, false );
+			}
+
+			function onWindowResize() {
+
+			    camera.aspect = window.innerWidth / window.innerHeight;
+			    camera.updateProjectionMatrix();
+
+			    renderer.setSize(window.innerWidth, window.innerHeight);
+
+			    controls.handleResize();
+
+			}
+
+			function onDocumentMouseMove( event ) {
+
+			    mouseX = ( event.clientX - windowHalfX ) / 2;
+			    mouseY = ( event.clientY - windowHalfY ) / 2;
+
+			}
+
+			//
+
+			function animate() {
+
+			    requestAnimationFrame(animate);
+			    controls.update();
+
+			    render();
+			}
+
+			function render() {
+			    //camera.position.x += ( mouseX - camera.position.x ) * .05;
+			    //camera.position.y += ( - mouseY - camera.position.y ) * .05;
+			    camera.lookAt( scene.position );
+
+			    renderer.render( scene, camera );
+			}
+			//
+
+    </script>
+
+</body>
+</html>
