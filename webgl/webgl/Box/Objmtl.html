@@ -107,7 +107,7 @@
 				THREE.Loader.Handlers.add( /\.dds$/i, new THREE.DDSLoader() );
 
 				var loader = new THREE.OBJMTLLoader();
-				loader.load('model/5.obj', 'model/5.mtl', function (object) {
+				loader.load('model/centerone.obj', 'model/centerone.mtl', function (object) {
 
 					object.position.y = - 80;
 					scene.add( object );

@@ -108,7 +108,7 @@
 
 				var loader = new THREE.JSONLoader();
 				var callbackMale = function (geometry, materials) { createScene(geometry, materials, 90, FLOOR, 50, 105) };
-				loader.load("model/5.js", callbackMale);
+				loader.load("model/centerone.js", callbackMale);
 				//
 
 				renderer = new THREE.WebGLRenderer({ antialias: false });
@@ -132,6 +132,7 @@
 			    createMaterialsPalette(materials, 100, b);
 
 			}
+
 			function createMaterialsPalette(materials, size, bottom) {
 
 			    for (var i = 0; i < materials.length; i++) {
@@ -167,6 +168,7 @@
 			    }
 
 			}
+
 			function onWindowResize() {
 
 			    camera.aspect = window.innerWidth / window.innerHeight;

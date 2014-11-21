@@ -59,6 +59,7 @@
   <ItemGroup>
     <Content Include="Box\Json.html" />
     <Content Include="Box\model\5.js" />
+    <Content Include="Box\model\centerone.js" />
     <Content Include="Box\Objmtl.html" />
     <Content Include="Box\js\DDSLoader.js" />
     <Content Include="Box\js\Detector.js" />
@@ -76,8 +77,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Box\web.config" />
-    <Content Include="Box\model\a.mtl" />
-    <Content Include="Box\model\a.obj" />
     <Content Include="Box\model\5.mtl" />
     <Content Include="Box\model\5.obj" />
     <None Include="Web.Debug.config">
