@@ -58,8 +58,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Box\Json.html" />
+    <Content Include="Box\js\FirstPersonControls.js" />
+    <Content Include="Box\js\PointerLockControls.js" />
+    <Content Include="Box\model\20120304023211906713.jpg" />
+    <Content Include="Box\model\4676308_142409416163_2.jpg" />
     <Content Include="Box\model\5.js" />
+    <Content Include="Box\model\6xsp012m.jpg" />
+    <Content Include="Box\model\bigscreen.jpg" />
     <Content Include="Box\model\centerone.js" />
+    <Content Include="Box\model\di.jpg" />
+    <Content Include="Box\model\mu.JPG" />
+    <Content Include="Box\model\ping.jpg" />
+    <Content Include="Box\model\t001\aaaaaaaaa.ma\centerone\Image\“照相背景”为智能对象-1.jpg" />
+    <Content Include="Box\model\t001\“照相背景”为智能对象-1.jpg" />
+    <Content Include="Box\model\t001\1.jpg" />
     <Content Include="Box\Objmtl.html" />
     <Content Include="Box\js\DDSLoader.js" />
     <Content Include="Box\js\Detector.js" />
@@ -70,6 +82,38 @@
     <Content Include="Box\js\three.min.js" />
     <Content Include="Box\js\THREEx.WindowResize.js" />
     <Content Include="Box\js\TrackballControls.js" />
+    <Content Include="Box\pointer.html" />
+    <Content Include="gl\index.html" />
+    <Content Include="gl\js\CenterOneLoader.js" />
+    <Content Include="gl\js\FirstPerson.js" />
+    <Content Include="gl\js\Flat.js" />
+    <Content Include="gl\js\JsLoader.js" />
+    <Content Include="gl\js\lib\DDSLoader.js" />
+    <Content Include="gl\js\lib\Detector.js" />
+    <Content Include="gl\js\lib\FirstPersonControls.js" />
+    <Content Include="gl\js\lib\jquery.min.js" />
+    <Content Include="gl\js\lib\MTLLoader.js" />
+    <Content Include="gl\js\lib\OBJLoader.js" />
+    <Content Include="gl\js\lib\OBJMTLLoader.js" />
+    <Content Include="gl\js\lib\OrbitControls.js" />
+    <Content Include="gl\js\lib\raphael-min.js" />
+    <Content Include="gl\js\lib\raphael-svg-import.js" />
+    <Content Include="gl\js\lib\Stats.js" />
+    <Content Include="gl\js\lib\stats.min.js" />
+    <Content Include="gl\js\lib\three.js" />
+    <Content Include="gl\js\lib\three.min.js" />
+    <Content Include="gl\js\lib\THREEx.FullScreen.js" />
+    <Content Include="gl\js\lib\THREEx.KeyboardState.js" />
+    <Content Include="gl\js\lib\THREEx.WindowResize.js" />
+    <Content Include="gl\model\20120304023211906713.jpg" />
+    <Content Include="gl\model\4676308_142409416163_2.jpg" />
+    <Content Include="gl\model\5.js" />
+    <Content Include="gl\model\6xsp012m.jpg" />
+    <Content Include="gl\model\di.jpg" />
+    <Content Include="gl\model\mu.JPG" />
+    <Content Include="gl\model\ping.jpg" />
+    <Content Include="gl\js\OBJLoader.js" />
+    <Content Include="gl\model\t001\123.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +123,20 @@
     <Content Include="Box\web.config" />
     <Content Include="Box\model\5.mtl" />
     <Content Include="Box\model\5.obj" />
+    <Content Include="Box\model\center1.mtl" />
+    <Content Include="Box\model\center1.obj" />
+    <Content Include="gl\model\5.mtl" />
+    <Content Include="gl\model\5.obj" />
+    <Content Include="gl\model\center1.mtl" />
+    <Content Include="gl\model\center1.obj" />
+    <Content Include="gl\web.config" />
+    <Content Include="gl\model\t001\aaaaaaaaa.mtl" />
+    <Content Include="gl\model\t001\aaaaaaaaa.obj" />
+    <Content Include="Box\model\t001\aaaaaaaaa.ma.zip" />
+    <Content Include="Box\model\t001\aaaaaaaaa.ma\aaaaaaaaa.ma" />
+    <Content Include="Box\model\t001\aaaaaaaaa.ma\Users\v-cxue\Documents\maya\projects\default\workspace.mel" />
+    <Content Include="Box\model\t001\aaaaaaaaa.mtl" />
+    <Content Include="Box\model\t001\aaaaaaaaa.obj" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,0 +1,64 @@
+newmtl lighthouse:Box27SG1
+illum 4
+Kd 0.62 0.88 1.00
+Ka 0.62 0.88 1.00
+Tf 0.50 0.50 0.50
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl lighthouse:Box111SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd di.jpg
+Ni 1.00
+newmtl lighthouse:Circle02SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 6xsp012m.jpg
+Ni 1.00
+newmtl lighthouse:Layer:test01
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.50 0.50 0.50
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lighthouse:Line04SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd mu.JPG
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl lighthouse:Line28SG1
+illum 4
+Kd 1.00 0.82 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lighthouse:Line97SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 4676308_142409416163_2.jpg
+Ni 1.00
+newmtl lighthouse:Line162SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 20120304023211906713.jpg
+Ni 1.00
+newmtl lighthouseObject03SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd ping.jpg
+Ni 1.00

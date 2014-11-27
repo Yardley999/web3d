@@ -45,6 +45,7 @@
     <script src="js/stats.min.js"></script>
 
     <script src="js/OrbitControls.js"></script>
+    <script src="js/FirstPersonControls.js"></script>
     <script src="js/THREEx.WindowResize.js"></script>
 
     <script>
@@ -108,7 +109,7 @@
 
 				var loader = new THREE.JSONLoader();
 				var callbackMale = function (geometry, materials) { createScene(geometry, materials, 90, FLOOR, 50, 105) };
-				loader.load("model/centerone.js", callbackMale);
+				loader.load("model/5.js", callbackMale);
 				//
 
 				renderer = new THREE.WebGLRenderer({ antialias: false });
@@ -118,7 +119,8 @@
 				//document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 
 			    //
-				controls = new THREE.OrbitControls(camera, renderer.domElement);
+			    //controls = new THREE.OrbitControls(camera, renderer.domElement);
+				controls = new THREE.FirstPersonControls(camera, render.domElement);
 				THREEx.WindowResize(renderer, camera);
 				//window.addEventListener( 'resize', onWindowResize, false );
 			}
